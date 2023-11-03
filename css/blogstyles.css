@@ -1,0 +1,143 @@
+/* Custom styles for your blog */
+.blog-section {
+	border: 1px solid #ddd;
+	padding: 20px;
+	margin-bottom: 20px;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blog-section h3 {
+	color: #333;
+}
+
+.blog-section p {
+	color: #666;
+}
+/* Custom styles for your site */
+
+.navbar {
+	background-color: white;
+	z-index: 9999;
+
+}
+
+.navbar-brand img {
+	max-height: 40px;
+}
+
+.navbar-nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-link {
+	margin: 0 15px;
+	color: white;
+	margin-right: 105px;
+}
+
+body {
+	background-image: url('https://i.imgur.com/RdQhXvu.gif');
+	background-size: cover;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+
+}
+.social-media-buttons {
+	text-align: center;
+}
+@keyframes backgroundAnimation {
+	0% {
+		background-position: 0% 0%;
+	}
+	100% {
+		background-position: 100% 0%;
+	}
+}
+
+.container {
+	color: white;
+}
+
+footer {
+	background-color: #2C2D31;
+	padding: 20px 0;
+	color: #fff;
+	margin-top: 100px;
+	border: 2px solid #00FFFF;
+	border-radius: 10px;
+}
+.images {
+	margin: 0 auto;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 60vh;
+}
+
+.image-container {
+	display: flex;
+	align-items: center;
+	max-width: 420px;
+	margin: 0 auto;
+}
+
+.subsubhead {
+	padding-top: 17px;
+}
+
+.image-text {
+	font-size: 15px;
+	font-weight: bold;
+	margin-left: auto;
+	letter-spacing: 3px;
+	margin-right: auto;
+	text-align: center;
+	padding-top: 15px;
+	line-height: 1.5em;
+	color: white;
+}
+
+.blog-image {
+	margin-bottom: 50px; /* Adjust the margin as needed */
+}
+.navbar-sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	animation: slideDown 0.5s;
+}
+.navbar-fixed {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.navbar-hidden {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	animation: slideUp 0.5s forwards;
+}
+
+@keyframes slideDown {
+	from {
+		transform: translateY(-100%);
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+
+@keyframes slideUp {
+	from {
+		transform: translateY(0);
+	}
+	to {
+		transform: translateY(-100%);
+	}
+}
