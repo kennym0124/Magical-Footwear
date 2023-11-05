@@ -62,16 +62,13 @@
 	margin-right: 105px;
 }
 body {
-	background-image: linear-gradient(to right,rgb(16, 33, 87), black);
-	background-size: 400%;
-    animation: backgroundAnimation 3.5s infinite alternate;
-    background-attachment: fixed;
-	height: 100vh;
+	background-size: 300%;
+	background: linear-gradient(to bottom, #2C2D31, #4CC8C3, #2C2D31);
+	height: 105vh;
 	padding: 0;
 	margin: auto;
 	color: white;
 	overflow-x: hidden;
-
 }
 
 @keyframes backgroundAnimation {

@@ -24,8 +24,9 @@
 }
 
 .nav-link {
-	margin: 0 15px 0 105px;
-	color: white;
+    margin: 0 15px;
+    color: white;
+    margin-right: 105px;
 }
 .container p {
 	margin-bottom: 30px;
@@ -38,7 +39,6 @@ body {
 	margin: auto;
 	color: white;
 	overflow-x: hidden;
-
 }
 
 .container {
