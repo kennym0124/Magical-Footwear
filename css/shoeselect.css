@@ -1,0 +1,84 @@
+.navbar {
+	background-color: white;
+	z-index: 9999;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+}
+.fixed-navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: white;
+	z-index: 1000;
+	transition: transform 0.3s;
+}
+.navbar-brand img {
+	max-height: 40px;
+}
+.navbar-nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+h1, .h1 {
+    font-size: 2.5rem;
+	padding-top: 100px;
+	padding-left: 400px;
+}
+.nav-link {
+    margin: 0 15px;
+    color: white;
+    margin-right: 105px;
+}
+body {
+	background-size: 300%;
+	height: 100vh;
+	padding: 0;
+	margin: auto;
+	color: white;
+	overflow-x: hidden;
+	padding-bottom: 100px;
+}
+.container {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.card-container {
+	margin-top: 50px;
+	color: black;
+}
+footer {
+	background-color: #2C2D31;
+	padding: 20px 0;
+	color: #fff;
+	border: 2px solid #00FFFF;
+	border-radius: 10px;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+  }
+.social-media-buttons {
+	text-align: center;
+}
+/* Sticky Navbar */
+.navbar-sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	animation: slideDown 0.5s;
+}
+.navbar-fixed {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.navbar-hidden {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	animation: slideUp 0.5s forwards;
+}

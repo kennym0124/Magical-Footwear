@@ -30,7 +30,7 @@
 body {
 	background-size: 300%;
 	background: linear-gradient(to bottom, #2C2D31, #4CC8C3, #2C2D31);
-	height: 105vh;
+	height: 100vh;
 	padding: 0;
 	margin: auto;
 	color: white;
@@ -78,6 +78,17 @@ picture {
   display: flex;
   align-items: center; 
   margin-top: 100px;
+  position: relative;
+}
+body::after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 118px;
+	height: calc(100vh - 70px - 182px);
+	width: 3px;
+	background-color: black;
+	z-index: 10;
 }
 .placeholder {
   max-width: 610px;
@@ -86,6 +97,12 @@ picture {
 }
 .col-2 {
     padding-right: 1px;
+}
+.Textforshoe {
+	padding-left: 31px;
+	width: 25%;
+	margin-left: auto;
+    margin-right: 450px;
 }
 /* Sticky Navbar */
 .navbar-sticky {
@@ -126,18 +143,17 @@ picture {
 .Cart-buttons {
 	padding-left: 29px;
 }
-
-
 .image-carousel-container {
 	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 20px;
-	padding: 10px;
+    margin-top: 149px;
+    margin-right: 130px;
 	background-color: white;
 	border-radius: 15px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transform: scale(1.5);
   }
   
   .image-carousel {
