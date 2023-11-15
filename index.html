@@ -6,6 +6,10 @@
   <title>Magical Footwear</title>
   <link rel="stylesheet" href="css/bootstrap-4.4.1.css">
   <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/jquery-3.4.1.min.js"></script>
+  <script defer src="js/popper.min.js"></script>
+  <script defer src="js/bootstrap-4.4.1.js"></script>
+  <script defer src="js/indexJS.js"></script>
 <script type="application/ld+json">
 {
 "@context": "http://magicalfootwear.com/index.html",
@@ -79,89 +83,94 @@
 </script>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed navbar-hidden">
-  <div class="container">
-    <a class="navbar-brand" href="#"><img src="images/Logo.png" alt="Magical Footwear Logo"></a>
-      <!--This is the Hamburger bar-->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="aboutus.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contactus.html">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Blog.html">Blog</a>
-        </li>
-      </ul>
+
+<div class="bodyContainer" style="border: solid green;">
+  <div class="background"></div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed navbar-hidden">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="images/Logo.png" alt="Magical Footwear Logo"></a>
+        <!--This is the Hamburger bar-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Blog.html">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="section1">
+    <div class="greetingText">
+      <h1>Wear Your Imagination with Magical Footwear</h1>
+      <p>Step into a world of enchanting styles and exceptional comfort as you explore our curated collection of footwear designed to make every step magical.</p>
+      <button id="scrollDownButton" type="button">Get Started</button>
     </div>
   </div>
-</nav>
+  
+  <div class="section2" id="section2">
+    <div class="subInfoBox" style=>
+      <div class="customerService" id="subInfo">
+        <img src="images/customerService.png" alt="Customer Service Logo">
+        <p>
+          Our Customer Service department is committed to making your 
+          experience as seamless as possible. Available 24/7, we will always
+          be here to solve any issues you may have.
+        </p>
+      </div>
+      <div class="dailyDiscounts" id="subInfo">
+        <img src="images/discount.png" alt="Discount Logo">
+        <p>
+          Tight budget? Browse around to find huge discounts
+          to suit your specific needs. Regardless of who you are, Magical Footwear 
+          aims to keep things as affordable as possible.
+        </p>
+      </div>
+      <div class="innovation" id="subInfo">
+        <img src="images/innovation.png" alt="Customer Service Logo">
+        <p>
+          placeholder
+        </p>
+      </div>
+    </div>
+    <div class="shortIntro">
+      <h2>Why Us?</h2>
+      <div class="introContainer">
+          <div class="leftColumn introColumn">
+            <img src="images/runningShoes.jpg" alt="runningShoes">
+          </div>
+          <div class="rightColumn introColumn">
+            <h1><em>“Good shoes take you good places.”</em></h1>
+            <p>Welcome to [Your Company Name], where we're reshaping the narrative of shoe care. Tired of spending endless hours cleaning your footwear? Enter our game-changing spray-on shoe solution, 
+              designed to revolutionize the way you care for your beloved pairs. With a quick and efficient application process, our formula offers the ultimate in convenience, ensuring your shoes stay pristine without the traditional hassle. At [Your Company Name], 
+              we're not just selling a product; we're offering a lifestyle upgrade, freeing up your time and simplifying the maintenance of your cherished footwear.</p>
 
-<div class="container text-center">
-  <h1 class="mt-4">Magical Footwear</h1>
-  <h2>Wear Your Imagination with Magical Footwear</h2>
-    <p>Welcome to Magical Footwear, where dreams meet your feet! Step into a world of enchanting styles and exceptional comfort as you explore our curated collection of footwear designed to make every step magical.</p>
-</div>
-            <div class="img-container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="image-container">
-							<div class="secondimage">
-                            <picture>
-                                <source srcset="images/Dressshoes.jpg" media="(min-width: 768px)">
-                                <img src="images/sprayshoes1.jpg" class="img-fluid" alt="DressShoes" style="max-height: 700px;">
-                            </picture>
-                            <p class="image-text">Enchanted Elegance: Magical Footwear's Spray-On Shoes. Discover the extraordinary with shoes that materialize like magic. Our innovative spray will leave you in awe as it conjures up the perfect pair, customized just for you.</p>
-							</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="image-container">
-                            <div class="secondimage">
-								<picture>
-                                <source srcset="images/sprayshoes1.jpg" media="(min-width: 768px)">
-                                <img src="images/Dressshoes.jpg" class="img-fluid" alt="Spray Shoe 1" style="max-height: 700px;">
-                                <p class="image-text">Step into a World of Magic with Magical Footwear! Our spray-on shoes are the stuff of dreams. Experience the impossible as the mist transforms into stylish, comfortable shoes right before your eyes. Unleash your inner magician!</p>
-								</picture>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="image-container">
-							<div class="secondimage">
-                            <picture>
-								<source srcset="images/SprayShoes3.jpg" media="(min-width: 768px)">
-                                <img src="images/SprayShoes3.jpg" class="img-fluid" alt="Spray shoes" style="max-height: 700px;">
-                            </picture>
-                            <p class="image-text">Magic Meets Fashion with Magical Footwear! No wands, no tricks – just spray and strut. Watch as our enchanted formula molds into your dream pair of shoes. Experience the extraordinary with every step you take.</p>
-							</div>
-                        </div>
-                    </div>
-                </div>
+            <p>What makes [Your Company Name] truly stand out is our unwavering commitment to excellence and sustainability. Our spray-on technology not only keeps your shoes looking brand 
+              new but also minimizes the environmental impact of shoe care. By choosing [Your Company Name], you're making a conscious decision to support a greener future
+              while enjoying the benefits of a hassle-free shoe care routine. Join us in stepping into a world where convenience and sustainability coexist harmoniously.</p>
+
+            <p>Embrace the future of footwear care with confidence – choose [Your Company Name] for a seamless blend of innovation, convenience, 
+              and environmental responsibility. Your shoes deserve the best, and so do you</p>
+            <div class="CTA">
+              <h1>Interested?</h1>
+              <p>button go here to look at shoes :)</p>
             </div>
-            <div class="center-v center-h" style="display: flex; justify-content: center; align-items: center; height: 110px;">
-              <a class="btn btn-primary" href="shoeselect.html">Buy Now!</a>
-            </div>
-<footer>
-  <div class="container">
-    <p class="text-center">&copy; Magical Footwear 2023</p>
-	  	  <div class="social-media-buttons">
-        <a href="https://www.facebook.com/profile.php?id=61552925400618"><img src="images/facebook.png" width="50px" height="50px" alt="Facebook"></a>
-        <a href="https://twitter.com/MagicFootwear12"><img src="images/twitter.png" width="55px" height="50px" alt="twitter.png"></a>
-        <a href="https://www.youtube.com/channel/UCKl5srvzb4KELbFePDRfaQQ"><img src="images/youtube.png"  width="50px" height="45px" alt="Youtube"></a>
-	  </div>
+          </div>
+      </div>
+    </div>
   </div>
-</footer>
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap-4.4.1.js"></script>
+</div>
+
 </body>
 </html>
