@@ -1,4 +1,9 @@
-.navbar {
+*{
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+}
+
+navbar {
 	background-color: white;
 	z-index: 9999;
 	box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
@@ -28,56 +33,179 @@
     color: white;
     margin-right: 105px;
 }
-.container p {
-	margin-bottom: 30px;
-}
-body {
-	background-size: 300%;
-	background: linear-gradient(to bottom, #2C2D31, #4CC8C3, #2C2D31);
-	height: 105vh;
-	padding: 0;
-	margin: auto;
-	color: white;
-	overflow-x: hidden;
-}
 
 .container {
 	color: white;
 }
 
-footer {
-	background-color: #2C2D31;
-	padding: 20px 0;
-	color: #fff;
-	margin-top: 50px;
-	border: 2px solid #00FFFF;
-	border-radius: 10px;
-	box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+.container p {
+	margin-bottom: 30px;
 }
 
-.image-container {
-    display: flex;
-    align-items: center;
-    max-width: 500px;
-    margin: 100px auto 0 auto;
+body {
+	background-color: beige;
+	overflow-x: hidden;
 }
 
+.background{
+	height: 100vh;
+	width: 100%;
+	z-index: -1;
+	position: absolute;
+	background-image: url("/images/homePageShoe.jpg");
+	filter:blur(5px);
+}
 
-.image-text {
-	font-size: 16px;
-	font-weight: normal;
+.bodyContainer{
+	backdrop-filter: blur(25px);
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: relative;
+	z-index: 0;
+}
+
+.section1{
+	display: flex;
+	align-items: center;
+	height: 100vh;
+}
+
+.greetingText{
+	height: 600px;
+	width: 600px;
+	padding: 5px;
+	margin-left: 4vw;
+	font-weight: 100;
+}
+
+.greetingText h1{
+	font-weight: 600;
+	font-size: 75px;
+	animation: fadeIn 2s forwards;
+}
+
+.greetingText p, .greetingText button{
+	opacity: 0;
+	animation: fadeIn 2s forwards;
+	animation-delay: 1s;
+}
+
+.scrollDownButton{
+	border-radius: 50px;
+	width: 100px;	
+}
+
+.section2{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+	background: rgb(226, 210, 188);
+	
+}
+.subInfoBox{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 200px;
+	width: 70vw;
+	margin-top: 20px;
+	box-shadow: 0 5px 5px 2px;
+	
+}
+
+#subInfo{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
-	padding: 15px 0;
-	line-height: 1.4;
-	color: white;
+	height: 100%;
+	width: 350px
 }
 
-.social-media-buttons {
+#subInfo img{
+	height: 75px;
+	width: auto;
+}
+
+.shortIntro{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 50px;
+	height: 95vh;
+	width: 95vw;
+	box-shadow: 0 5px 5px 2px;
+}
+
+.introContainer{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	
+}
+
+.introContainer .introColumn{
+	margin: 15px;
+	height: 95%;
+	width: 90%;
+}
+
+.leftColumn img{
+	height: auto;
+	width: 100%;
+	border-radius: 15px;
+}
+
+.rightColumn{
 	text-align: center;
+	padding: 10px;
 }
-picture {
-    margin-left: 0;
+
+.CTA{
+	height: 175px;
+	box-shadow: inset 0 0 5px 2px;
 }
+
+@keyframes fadeIn{
+	0%{
+		transform: translateX(-45px);
+		opacity: 0;
+	}
+	100%{
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Sticky Navbar */
 .navbar-sticky {
 	position: fixed;
@@ -113,34 +241,4 @@ picture {
 	to {
 		transform: translateY(-100%);
 	}
-}
-.image-container {
-	background-color: #4CC8C3;
-	padding: 15px;
-	border-radius: 10px;
-	margin-top: 15px;
-	border: 5px solid #00A7A2;
-	box-shadow: 0 0 30px rgba(255, 255, 255, 0.9);
-
-}
-.image-container p {
-	background-color: rgba(51, 51, 51, 0.7);
-	padding: 15px;
-	border-radius: 10px;
-	margin-top: 15px;
-	border: 2px solid #FFFFFF;
-}
-.image-container img {
-	border-radius: 10px;
-}
-.btn {
-	width: 10%;
-	padding: 0.75rem;
-	border-radius: 5px;
-    border: 4px solid #00ffe3;
-	background-color: #2C2D31;
-	color: white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
