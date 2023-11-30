@@ -1,0 +1,255 @@
+.blog-section {
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 350px;
+  height: 350px;
+  max-width: 500px;
+}
+.blog-section h3, .blog-section h4 {
+  color: #fff;
+}
+.h1 {
+  color: #fff;
+}
+.Team-work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+.Team-work img {
+  width: 1750px;
+  height: auto;
+}
+.col-md-3 {
+    flex: 0 0 25%;
+}
+.blog-section p {
+  color: #fff;
+}
+.navbar {
+	background-color: darkgray;
+	z-index: 9999;
+
+}
+.container-text-center {
+  margin-top: 60px;
+  text-align: center;
+  margin-left: 50px;
+
+}
+.container-text-center h1 {
+  text-align: center;
+  font-size: 5.5rem;
+  margin-bottom: 15px;
+
+}
+.navbar-brand img {
+	max-height: 40px;
+}
+.navbar-nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nav-link {
+	margin: 0 15px;
+	color: white;
+	margin-right: 105px;
+}
+body {
+	background-color: #E2D2BC;
+	overflow-x: hidden;
+}
+
+.background{
+	height: 100vh;
+	width: 100%;
+	z-index: -1;
+	position: absolute;
+	filter:blur(5px);
+}
+@keyframes backgroundAnimation {
+	0% {
+		background-position: left;
+	}
+	100% {
+		background-position: right;
+	}
+}
+
+.container {
+	color: white;
+}
+
+footer {
+	background-color: #2C2D31;
+	padding: 20px 0;
+	color: #fff;
+	margin-top: 100px;
+	border: 2px solid #00FFFF;
+	border-radius: 10px;
+}
+.social-media-buttons {
+	text-align: center;
+}
+.images {
+	margin: 0 auto;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 60vh;
+}
+
+.image-container {
+	display: flex;
+	align-items: center;
+	max-width: 420px;
+	margin: 0 auto;
+}
+
+.subsubhead {
+	padding-top: 17px;
+}
+
+.image-text {
+	font-size: 15px;
+	font-weight: bold;
+	margin-left: auto;
+	letter-spacing: 3px;
+	margin-right: auto;
+	text-align: center;
+	padding-top: 15px;
+	line-height: 1.5em;
+	color: white;
+}
+
+.blog-image {
+	margin-bottom: 50px;
+}
+.navbar-sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	animation: slideDown 0.5s;
+}
+.navbar-fixed {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.navbar-hidden {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	animation: slideUp 0.5s forwards;
+}
+
+@keyframes slideDown {
+	from {
+		transform: translateY(-100%);
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+
+@keyframes slideUp {
+	from {
+		transform: translateY(0);
+	}
+	to {
+		transform: translateY(-100%);
+	}
+}
+.subInfoBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70vw;
+    margin-top: 100px;
+	height: 290px;
+    margin-right: 288px;
+    margin-left: auto;
+    box-shadow: 0 5px 5px 2px;
+}
+
+.missionHeader {
+    font-size: 50px; 
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: row; 
+    width: 100%;
+}
+
+.imageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 18%;
+    margin-right: 10px;
+}
+
+.imageContainer img {
+    height: 150px;
+    width: auto;
+    margin: 0;
+}
+
+#subInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    flex-basis: 70%;
+    margin: 0;
+    font-size: larger;
+}
+.whoWeAreSection {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin: auto;
+	max-width: 80%; /* Adjust this to control the maximum width */
+  }
+  
+  .whoWeAreHeader {
+	margin-top: 25px;
+	margin-bottom: 25px; /* Space between header and content */
+	font-size: 50px;
+  }
+  
+  .whoWeAreContent {
+	display: flex;
+	flex-direction: row; /* Arrange children in a row */
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .whoWeAreText, .whoWeAreImage {
+	flex: 1; /* Equal width to text and image */
+  }
+  
+  .whoWeAreText {
+	margin-right: 20px; /* Space between text and image */
+	font-size: 20px;
+	text-align: left;
+  }
+  
+  img {
+	max-width: 100%;
+	height: auto;
+  }
+  
