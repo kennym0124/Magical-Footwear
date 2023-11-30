@@ -62,15 +62,17 @@
 	margin-right: 105px;
 }
 body {
-	background-size: 300%;
-	background: linear-gradient(to bottom, #2C2D31, #4CC8C3, #2C2D31);
-	height: 125vh;
-	padding: 0;
-	margin: auto;
-	color: white;
+	background-color: #E2D2BC;
 	overflow-x: hidden;
 }
 
+.background{
+	height: 100vh;
+	width: 100%;
+	z-index: -1;
+	position: absolute;
+	filter:blur(5px);
+}
 @keyframes backgroundAnimation {
 	0% {
 		background-position: left;
@@ -165,3 +167,89 @@ footer {
 		transform: translateY(-100%);
 	}
 }
+.subInfoBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70vw;
+    margin-top: 100px;
+	height: 290px;
+    margin-right: 288px;
+    margin-left: auto;
+    box-shadow: 0 5px 5px 2px;
+}
+
+.missionHeader {
+    font-size: 50px; 
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: row; 
+    width: 100%;
+}
+
+.imageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 18%;
+    margin-right: 10px;
+}
+
+.imageContainer img {
+    height: 150px;
+    width: auto;
+    margin: 0;
+}
+
+#subInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    flex-basis: 70%;
+    margin: 0;
+    font-size: larger;
+}
+.whoWeAreSection {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin: auto;
+	max-width: 80%; /* Adjust this to control the maximum width */
+  }
+  
+  .whoWeAreHeader {
+	margin-top: 25px;
+	margin-bottom: 25px; /* Space between header and content */
+	font-size: 50px;
+  }
+  
+  .whoWeAreContent {
+	display: flex;
+	flex-direction: row; /* Arrange children in a row */
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .whoWeAreText, .whoWeAreImage {
+	flex: 1; /* Equal width to text and image */
+  }
+  
+  .whoWeAreText {
+	margin-right: 20px; /* Space between text and image */
+	font-size: 20px;
+	text-align: left;
+  }
+  
+  img {
+	max-width: 100%;
+	height: auto;
+  }
+  
