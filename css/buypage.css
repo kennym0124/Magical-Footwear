@@ -29,11 +29,11 @@
 }
 body {
 	background-size: 300%;
-	background: linear-gradient(to bottom, #2C2D31, #4CC8C3, #2C2D31);
+	background-color: #E2D2BC;
 	height: 100vh;
 	padding: 0;
 	margin: auto;
-	color: white;
+	color: rgb(0, 0, 0);
 	overflow-x: hidden;
 }
 .container {
@@ -54,15 +54,7 @@ body {
 }
 
 footer {
-	background-color: #2C2D31;
-	padding: 20px 0;
-	color: #fff;
-	border: 2px solid #00FFFF;
-	border-radius: 10px;
-	box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
-	position: absolute;
-	bottom: 0;
-	width: 100%;
+
   }
 .social-media-buttons {
 	text-align: center;
