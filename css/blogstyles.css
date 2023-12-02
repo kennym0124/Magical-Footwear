@@ -1,143 +1,85 @@
-/* Custom styles for your blog */
-.blog-section {
-	border: 1px solid #ddd;
-	padding: 20px;
-	margin-bottom: 20px;
-	background-color: #fff;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.blog-section h3 {
-	color: #333;
-}
-
-.blog-section p {
-	color: #666;
-}
-/* Custom styles for your site */
-
-.navbar {
-	background-color: white;
-	z-index: 9999;
-
-}
-
-.navbar-brand img {
-	max-height: 40px;
-}
-
-.navbar-nav {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.nav-link {
-	margin: 0 15px;
-	color: white;
-	margin-right: 105px;
-}
+/* General styling for the layout */
 
 body {
-	background-image: url('https://i.imgur.com/RdQhXvu.gif');
-	background-size: cover;
-	height: 100vh;
-	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: beige;
 	margin: 0;
-	overflow-x: hidden;
-
-}
-.social-media-buttons {
-	text-align: center;
-}
-@keyframes backgroundAnimation {
-	0% {
-		background-position: 0% 0%;
-	}
-	100% {
-		background-position: 100% 0%;
-	}
 }
 
 .container {
-	color: white;
+	display: grid;
+	grid-template-columns: 1fr 400px; /* Increased sidebar width */
+	margin: 10px;
 }
 
-footer {
-	background-color: #2C2D31;
-	padding: 20px 0;
-	color: #fff;
+.content, .sidebar {
 	margin-top: 100px;
-	border: 2px solid #00FFFF;
-	border-radius: 10px;
-}
-.images {
-	margin: 0 auto;
-	display: flex;
-	justify-content: left;
-	align-items: center;
-	flex-wrap: wrap;
-	height: 60vh;
 }
 
 .image-container {
-	display: flex;
-	align-items: center;
-	max-width: 420px;
-	margin: 0 auto;
+	margin-bottom: 30px;
 }
 
-.subsubhead {
-	padding-top: 17px;
+/* Styles for images */
+.sidebar img {
+	width: 125%;
+	height: auto;
+	margin-left: -35%; /* Shift the image to the left */
+}
+.sidebar h2 {
+	width: 520px;
+	margin-left: -35%; /* Shift the image to the left */
+}
+.content p {
+	max-width: 80%; /* Match the paragraph width to the image width */
+	margin: 0 auto 20px 0; /* Reduced bottom margin */
 }
 
-.image-text {
-	font-size: 15px;
-	font-weight: bold;
-	margin-left: auto;
-	letter-spacing: 3px;
-	margin-right: auto;
-	text-align: center;
-	padding-top: 15px;
-	line-height: 1.5em;
-	color: white;
+/* Make the first image smaller */
+.content img {
+	max-width: 80%; /* Adjust the max-width to make the image smaller */
+	margin: 0 auto; /* Center the image */
+}
+.image-container a {
+	color: inherit; /* Inherits the text color from the parent element */
+	text-decoration: none; /* Removes the underline from the link */
+}
+footer {
+	background-color: #000; /* Black background */
+	color: #fff; /* White text */
+	padding: 30px;
+	display: flex; /* Use flexbox for layout */
+	align-items: center; /* Align items vertically */
+	justify-content: flex-start; /* Start items from the left */
 }
 
-.blog-image {
-	margin-bottom: 50px; /* Adjust the margin as needed */
+footer img {
+	height: 50px; /* Set the height of the images */
+	width: auto; /* Maintain the aspect ratio */
+	margin-right: 20px; /* Space between each icon */
 }
-.navbar-sticky {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	animation: slideDown 0.5s;
-}
-.navbar-fixed {
-	position: fixed;
-	top: 0;
-	width: 100%;
-}
-.navbar-hidden {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	animation: slideUp 0.5s forwards;
+.content h1 {
+	max-width: 85%;
 }
 
-@keyframes slideDown {
-	from {
-		transform: translateY(-100%);
+
+/* Media query for smaller screens */
+@media (max-width: 1500px) {
+	.content p {
+		max-width: 100%; /* Match the paragraph width to the image width */
 	}
-	to {
-		transform: translateY(0);
+	.container {
+		grid-template-columns: 1fr;
 	}
-}
 
-@keyframes slideUp {
-	from {
-		transform: translateY(0);
+	/* Hide second and third images on smaller screens */
+	.sidebar .image-container:nth-child(-n+2) {
+		display: none;
 	}
-	to {
-		transform: translateY(-100%);
+
+	/* Adjust the size of the first image for smaller screens */
+	.content img {
+		max-width: 100%; /* Image takes full width of the container */
+		width: auto; /* Image width adjusts automatically */
 	}
 }

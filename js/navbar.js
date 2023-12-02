@@ -52,32 +52,4 @@ document.addEventListener('DOMContentLoaded', function () {
             burgerMenu.classList.remove('close');
         }
     });
-
-    let lastScrollTop = 0;
-    window.addEventListener('scroll', function() {
-        var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-        if (currentScroll > lastScrollTop) {
-            // Scrolling down
-            if (menu.classList.contains('show')) {
-            }
-            else {
-                document.querySelector('nav').style.top = '-79px';
-                document.querySelector('#main-body').style.top = '-79px'; // Move main body up
-            }
-
-        } else {
-            if (menu.classList.contains('show')) {
-                document.querySelector('nav').style.top = '0px'; // Show the navbar
-                document.querySelector('#main-body').style.top = '185px'; // Move main body down
-            }
-            else {
-                // Scrolling up
-                document.querySelector('nav').style.top = '0'; // Show the navbar
-                document.querySelector('#main-body').style.top = '0'; // Move main body down
-            }
-
-        }
-        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Avoid negative scrolling values
-    }, false);
-
 });
