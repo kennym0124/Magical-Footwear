@@ -56,7 +56,6 @@ navbar {
 }
 
 body {
-	background-color: beige;
 	overflow-x: hidden;
 }
 
@@ -67,6 +66,7 @@ body {
 	position: absolute;
 	background-image: url("../images/homePageShoe.jpg");
  	background-repeat: no-repeat;
+	background-attachment: fixed;
   	filter: blur(5px);
   }
 

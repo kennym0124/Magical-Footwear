@@ -1,7 +1,8 @@
 /* Custom styles for your site */
 *{
-    color: white;
+    color: black;
 }
+
 .navbar {
 	background-color: white;
     z-index: 9999;
@@ -24,10 +25,7 @@
 	margin-right: 105px;
 }
 body {
-	background-image: linear-gradient(to right,rgb(16, 33, 87), black);
-	background-size: 400%;
-    animation: backgroundAnimation 3.5s infinite alternate;
-    background-attachment: fixed;
+	background: rgb(226, 210, 188);
 	height: 100vh;
 	padding: 0;
 	margin: 0;
@@ -36,14 +34,7 @@ body {
 .social-media-buttons {
 	text-align: center;
 }
-@keyframes backgroundAnimation {
-	0% {
-		background-position: left;
-	}
-	100% {
-		background-position: right;
-	}
-}
+
 
 .container {
 	color: white;
@@ -58,38 +49,6 @@ footer {
     border-radius: 10px;
 }
 
-.images {
-	margin: 0 auto;
-	display: flex;
-	justify-content: left;
-	align-items: center;
-	flex-wrap: wrap;
-	height: 60vh;
-}
-
-.image-container {
-	display: flex;
-	align-items: center;
-	max-width: 420px;
-	margin: 0 auto;
-}
-
-.subsubhead {
-	padding-top: 17px;
-}
-
-.image-text {
-	font-size: 15px;
-	font-weight: bold;
-	margin-left: auto;
-	letter-spacing: 3px;
-	margin-right: auto;
-	text-align: center;
-	padding-top: 15px;
-	line-height: 1.5em;
-	color: white;
-}
-
 .blog-image {
 	margin-bottom: 50px; /* Adjust the margin as needed */
 }
@@ -97,17 +56,35 @@ footer {
 .bodyContainer{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 90px;
 }
 
+.introBox{
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 5px 5px 2px;
+    width: 57%;
+    padding: 20px
+}
+.introBoxContent{
+    text-align: center;
+    width: 40%;
+}
 .freqHeader{
     margin-top: 50px;
     text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    width: 45%;
 }
 
 .freqQuestions{
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
+    margin-top: 20px;
 }
 
 .card1, .card2, .card3, .card4{
@@ -121,22 +98,22 @@ footer {
 .cardContainer1, .cardContainer2, .cardContainer3, .cardContainer4{
     perspective: 600px;
 }
-.cardContainer1:hover > .card1{
+.cardContainer1:hover .card1{
     cursor:pointer;
     transform: rotateY(180deg);
 }
 
-.cardContainer2:hover > .card2{
+.cardContainer2:hover .card2{
     cursor:pointer;
     transform: rotateY(180deg);
 }
 
-.cardContainer3:hover > .card3{
+.cardContainer3:hover .card3{
     cursor:pointer;
     transform: rotateY(180deg);
 }
 
-.cardContainer4:hover > .card4{
+.cardContainer4:hover .card4{
     cursor:pointer;
     transform: rotateY(180deg);
 }
@@ -146,17 +123,18 @@ footer {
     width: 100%;
     height: 100%;
     border-radius: 1rem;
-    box-shadow: 0 0 5px 2px black;
+    box-shadow: 5px 5px 5px 2px black;
     position: absolute;
     backface-visibility: hidden;
+    border: solid 2px black;
 }
 
 .frontCard1, .frontCard2, .frontCard3, .frontCard4{
-    background-color: lightblue;
+    background: rgb(226, 210, 188);
 }
 
 .backCard1, .backCard2, .backCard3, .backCard4{
-    background-color: lightblue;
+    background: rgb(226, 210, 188);
     transform: rotateY(180deg);
     display:flex;
     flex-direction: column;
@@ -218,6 +196,38 @@ footer {
     top: 0;
     width: 100%;
     animation: slideUp 0.5s forwards;
+}
+.contactContainer{
+    margin-top: 75px;
+    width: 75%;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 5px 5px 2px;
+}
+.contactSubContainer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    border: solid black;
+    border-radius: 10px;
+}
+#leftSide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: solid black;
+}
+
+#submit, #reset{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+#submit:hover, #reset:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
 }
 
 @keyframes slideDown {

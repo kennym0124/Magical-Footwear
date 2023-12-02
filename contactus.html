@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Magical Footwear Blog</title>
-  <link rel="stylesheet" href="css/bootstrap-4.4.1.css">
-  <link rel="stylesheet" href="css/contactusstyles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Magical Footwear's Spray On Shoes</title>
+    <link rel="stylesheet" href="css/bootstrap-4.4.1.css">
+    <link rel="stylesheet" href="css/contactusstyles.css">
     <link rel="stylesheet" href="css/hamburger.css">'
     <script defer src="js/navbar.js"></script>
-  <script type="application/ld+json">
+    <script defer src="js/contactus.js"></script>
+    <script type="application/ld+json">
 {
   "@context": "http://magicalfootwear.com/Blog.html",
   "@type": "BlogPosting",
@@ -63,13 +64,24 @@
 <div  id="main-body">
 
 <div class="bodyContainer">
-  <div class="image1" style="text-align: center;">
-    <img src="images/faq.png" style="height: auto; width: 50%; margin-top: 50px; border-radius: 5px;">
-  </div>
-  
+    <div class="introBox">
+        <img src="images/Logo.png" style="width: 200px; min-width: 200px; height: 200px; min-height: 200px;">
+        <div class="introBoxContent">
+            <h1 style="font-weight: bold;">We're here for you.</h1>
+            <p>Customers always come first and our top priority is getting you to where you want to be.
+                Feel free to take a look below to see if we can help with your issue.
+            </p>
+        </div>
+        
+    </div>
+    
     <div class="freqHeader">
-        <h1>Frequently Asked Questions</h1>
-        <p>Before you move on, let us provide you with some answers that may resolve your problems/inquiries.</p>
+        <img src="images/faq.png" style="width: 200px; min-width: 200px; height: 200px; min-height: 200px;">
+        <div class="freqHeaderText">
+            <h1 style="font-size: 50px;">Frequently Asked Questions</h1>
+            <p>Before you move on, let us provide you with some answers that may resolve your problems/inquiries.</p>
+        </div>
+        
     </div>
 
     <div class="freqQuestions">
@@ -133,22 +145,44 @@
                 </div>
             </div>
         </div>
-       
     </div>
-    <div class="persuadingText" style="text-align: center;">
-      <img src="images/customerSatisfaction.png" alt="customerSatisfaction" style="border-radius: 5px; filter: blur(4px);">
-      <div class="centered">
-        <h1>We're here for you.</h1>
-        Customers always come first and our top <br>
-        priority is getting you to where you want to be.
-      </div>
+    <div class="contactContainer">
+        <h1>Still need help?</h1>
+        <p>Feel free to contact us with any of the options listed below.</p>
+        <div class="contactSubContainer">
+            <div id="leftSide">
+                <div id="address">
+                    <img src="images/addressPin.png" style="width: 10%; height: auto"><br>
+                    <strong>Address</strong><br>
+                    553 East Briarwood Ave. Palm Harbor, FL 34683
+                </div>
+                <div id="email">
+                    <img src="images/emailLogo.png" style="width: 10%; height: auto"><br>
+                    <strong>Email</strong><br>
+                    magicalfootwear@gmail.com
+                </div>
+                <div id="phone">
+                    <img src="images/phoneLogo.png" style="width: 10%; height: auto"><br>
+                    <strong>Phone</strong><br>
+                    (904) 954-4705
+                </div>
+            </div>
+            <div id="rightSide" style="width: 100%">
+                <h1>Send us a message.</h1>
+                <p>Enter your details below, and we'll be sure to get back to you as soon as possible!</p>
+                <div class="contactForm">
+                    <form id="form" action="#" method="GET" name="form">
+                        <input type="text" id="name" name="name" placeholder="Name">
+                        <input type="email" id="email" name="email" placeholder="Email">
+                        <textarea id="message" style="width: 85%; height: 200px" placeholder="Write your message here..." name="message"></textarea>
+                        <br><input type="submit" id="submit"> <button type="reset" id="reset">Reset</button><br>
+                        <label id="submitNotification" style="visibility:hidden;">Congratulations!</label>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="contactInformation">
-      <h1>If none of the questions below helped you, feel free to contact us at any of the listed options below.</h1>
-      <p>Phone: 000-000-0000</p>
-      <p>Email: magicalfootwearsupport@gmail.com</p>
-      <p>735 Country Club St. Apex, NC 27502</p>
-    </div>
+    
 </div>
 
 <p></p>
