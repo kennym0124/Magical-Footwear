@@ -35,12 +35,12 @@
     </div>
   </main>
 </nav>
-<div  id="main-body">
+<div id="main-body">
 <div class="container">
   <div class="extra-container">
-    <div class="col-md-3">
+    <div class="col-md-9">
+      <h3><strong>Filters</strong></h3>
       <div class="filter-section">
-        <h3>Filters</h3>
         <div class="filter-option">
           <label for="price-range">Price Range</label>
           <select id="price-range" name="price-range">
@@ -51,6 +51,29 @@
             <option value="150-200">$150 - $200</option>
           </select>
         </div>
+        <div class="filter-option">
+          <label for="sort-price">Sort by Price</label>
+          <select id="sort-price" name="sort-price">
+            <option value="none">No Sort</option>-
+            <option value="asc">Low to High</option>
+            <option value="desc">High to Low</option>
+          </select>
+        </div>
+        <div class="filter-option">
+          <label for="sort-color">Sort by Color</label>
+          <select id="sort-color" name="sort-color">
+            <option value="none">No Color</option>
+            <option value="red" class="color-option red"></option>
+            <option value="orange" class="color-option orange"></option>
+            <option value="yellow" class="color-option yellow"></option>
+            <option value="green" class="color-option green"></option>
+            <option value="blue" class="color-option blue"></option>
+            <option value="purple" class="color-option purple"></option>
+            <option value="pink" class="color-option pink"></option>
+            <option value="brown" class="color-option brown"></option>
+            <option value="white" class="color-option white"></option>
+          </select>
+        </div>        
       </div>
     </div>
   <div class="card-container">
@@ -61,7 +84,7 @@
           <div class="card-body">
             <p class="shoe-name">UrbanStride Grey Sneakers</p>
             <p class="shoe-price">$119.99</p>
-            <a href="Buypage.html" class="btn btn-primary">Purchase</a>
+            <a href="Buypage.html?shoe=Shoe1" class="btn btn-primary">Purchase</a>
           </div>
         </div>
       </div>

@@ -27,4 +27,26 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
   });
+  document.addEventListener('DOMContentLoaded', function() {
+    let originalOrder = Array.from(document.getElementsByClassName('card'));
+    
+    document.getElementById('sort-price').addEventListener('change', function() {
+      let cards = Array.from(document.getElementsByClassName('card'));
+      let sortedCards = cards;
+  
+      if(this.value !== 'none') {
+        sortedCards = cards.sort(function(a, b) {
+          let priceA = parseFloat(a.getAttribute('data-price').replace('$', ''));
+          let priceB = parseFloat(b.getAttribute('data-price').replace('$', ''));
+          return this.value === 'asc' ? priceA - priceB : priceB - priceA;
+        }.bind(this));
+      } else {
+        sortedCards = originalOrder;
+      }
+  
+      let container = document.querySelector('.card-container .row');
+      container.innerHTML = '';
+      sortedCards.forEach(card => container.appendChild(card));
+    });
+  });
   
