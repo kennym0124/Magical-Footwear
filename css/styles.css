@@ -439,4 +439,12 @@ body {
 		height: auto;
 	}
   }
-  
+footer {
+	background-color: black;
+	padding: 10px;
+	color: #fff;
+	bottom: 0;
+	text-align: center;
+	overflow-x: hidden;
+
+}
