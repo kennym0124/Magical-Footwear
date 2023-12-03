@@ -35,3 +35,35 @@ document.addEventListener('DOMContentLoaded', function() {
 
     setInterval(advanceCarousel, 10000);
 });
+  document.addEventListener("DOMContentLoaded", function() {
+    // Function to get URL parameters
+    function getParameterByName(name, url = window.location.href) {
+      name = name.replace(/[\[\]]/g, '\\$&');
+      const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+
+    // Get the parameters
+    const shoe = getParameterByName('shoe');
+    const name = getParameterByName('name');
+    const price = getParameterByName('price');
+
+    // Update the image and text
+    if (shoe) {
+      document.querySelector('.images-container img.placeholder').src = `images/${shoe}.webp`;
+      // Add more img tags or update existing ones based on your carousel implementation
+    }
+
+    if (name) {
+      // Update text elements
+      document.querySelector('.shoe-name').textContent = name;
+    }
+
+    if (price) {
+      document.querySelector('.shoe-price').textContent = `$${price}`;
+    }
+  });
+
