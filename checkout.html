@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magical Footwear</title>
+  <link rel="stylesheet" href="css/bootstrap-4.4.1.css">
+  <link rel="stylesheet" href="css/checkout.css">
+  <link rel="stylesheet" href="css/hamburger.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script defer src="js/jquery-3.4.1.min.js"></script>
+  <script defer src="js/popper.min.js"></script>
+  <script defer src="js/bootstrap-4.4.1.js"></script>
+  <script defer src="js/navbar.js"></script>
+  <script defer src="js/checkout.js"></script>
+  <script type="application/ld+json">
+{
+"@context": "http://magicalfootwear.com/index.html",
+"@type": "Product",
+"name": "Magical Footwear",
+"image": "http://magicalfootwear.com/images/sprayshoes1.jpg",
+"description": "Magical Footwear's Spray-On Shoes. Discover the extraordinary with shoes that materialize like magic. Our innovative spray will leave you in awe as it conjures up the perfect pair, customized just for you.",
+"brand": {
+"@type": "Thing",
+"name": "Magical Footwear"
+},
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4.6",
+"reviewCount": "17"
+},
+"offers": {
+"@type": "Offer",
+"priceCurrency": "USD",
+"price": "6374.89",
+"priceValidUntil": "2025-12-31",
+"seller": {
+"@type": "Organization",
+"name": "Magical Footwear"
+}
+}
+}
+</script>
+<script type="application/ld+json">
+
+{
+  "@context": "http://magicalfootwear.com/index.html",
+  "@type": "ShoppingCenter",
+  "name": "Magical Footwear",
+  "description": "Magical Spray on shoes for all your needs.",
+  "url": "http://magicalfootwear.com/index.html",
+  "telephone": "+000000000",
+  "openingHours": "24/7 Online"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://magicalfootwear.com/index.html",
+  "@type": "OnlineStore",
+  "name": "Magical Footwear",
+  "description": "Magical Footwear is an innovative online retail company that specializes in a unique and groundbreaking product: spray-on shoes.This forward-thinking company has revolutionized the way people think about footwear by offering a convenient and customizable solution to shoe shopping. Magical Footwear's primary product line includes spray-on shoes in three distinct categories: boots, dress shoes, and sports shoes.",
+  "image": "http://magicalfootwear.com/images/sprayshoes1.png",
+  "logo": "http://magicalfootwear.com/images/Logo.png",
+  "parentOrganization": {
+    "@type": "OnlineBusiness",
+    "name": "Magical Footwear",
+    "url": "http://magicalfootwear.com/index.html"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "United States",
+    "addressLocality": "Florida"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": 17,
+    "ratingValue": 4.6
+  },
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "userInteractionCount": 75,
+    "interactionType": "https://schema.org/TradeAction"
+  },
+  "foundingDate": "2023-10-27"
+}
+</script>
+</head>
+<body>
+  
+  <nav>
+    <main class="cd__main">
+      <div class="logo">
+        <a href="#">
+          <img src="images/Logo.png" alt="Logo"></a>
+        <span class="logo-text">Magical Footwear</span>
+      </div>
+      <div id="burger-menu">
+        <span></span>
+      </div>
+      <div class="cart-icon">
+        <a href="shoeselect.html"><img src="images/cart64.png" alt="Cart"></a>
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shoeselect.html">Shop</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+        </ul>
+      </div>
+    </main>
+  </nav>
+  <div class="bodyContainer">
+    <div class="checkoutContainer">
+        <div class="checkoutBox">
+            <div id="leftside" class="boxContainer">
+                <p><strong>Billing Address:</strong></p>
+                <form id="form" action="#" method="GET" name="form">
+                    <label for="firstName">First Name:</label><br>
+                    <input type="text" id="firstName" name="First Name" class="textInput" placeholder="First Name"><br>
+                    <label for="lastName">Last Name:</label><br>
+                    <input type="text" id="lastName" name="Last Name" class="textInput" placeholder="Last Name">
+                    <label for="address">Address:</label><br>
+                    <input type="text" id="address" name="Address" class="textInput" placeholder="Address">
+                    <label for="city">City:</label><br>
+                    <input type="text" id="city" name="City" class="textInput" placeholder="City"><br>
+                    <br><label for="state">State:</label>
+                    <input type="text" id="state" name="State" class="textInputSmall" placeholder="State" maxlength="2">
+                    <label for="zipcode">Zipcode:</label>
+                    <input type="text" id="zipcode" name="Zipcode" class="textInputSmall" placeholder="Zipcode">
+                    
+                
+            </div>
+            <div id="rightside" class="boxContainer">
+                <p><strong>Payment Information:</strong></p>
+                    <label for="cardName">Name On Card:</label><br>
+                    <input type="text" id="cardName" name="Card Name" class="textInput" placeholder="Name On Card"><br>
+                    <label for="cardNumber">Card Number:</label><br>
+                    <input type="text" id="cardNumber" name="Card Number" class="textInput" placeholder="Card Number" maxlength="16">
+                    <label for="expMonth">Exp Month:</label><br>
+                    <input type="text" id="expMonth" name="Expiration Month" class="textInput" placeholder="Month"><br>
+                    <br><label for="expYear">Exp Year:</label>
+                    <input type="text" id="expYear" name="Expiration Year" class="textInputSmall" placeholder="Year" maxlength="4">
+                    <label for="CVV">CVV:</label>
+                    <input type="text" id="CVV" name="CVV" class="textInputSmall" placeholder="CVV" maxlength="3"><br>
+                    <br><input type="submit" id="submit" action="index.html">
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>
+  <footer class="footer mt-auto py-3">
+    <div class="container1">
+      <p class="text-center">&copy; Magical Footwear 2023</p>
+      <div class="social-media-buttons">
+        <a href="https://www.facebook.com/profile.php?id=61552925400618"><img src="images/facebook.png" width="50px" height="50px" alt="Facebook"></a>
+        <a href="https://twitter.com/MagicFootwear12"><img src="images/twitter.png" width="55px" height="50px" alt="twitter.png"></a>
+        <a href="https://www.youtube.com/channel/UCKl5srvzb4KELbFePDRfaQQ"><img src="images/youtube.png"  width="50px" height="45px" alt="Youtube"></a>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

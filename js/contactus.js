@@ -34,4 +34,8 @@ form.addEventListener('submit', (e) =>{
         alert("Please enter a message.");
         message.style.backgroundColor = "#FFCCCB";
     }
+    else{
+        alert("Message sent. We look forward to getting in touch with you soon!");
+    }
+    
 })

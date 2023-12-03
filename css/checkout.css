@@ -1,0 +1,118 @@
+*{
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    width: 0;
+    display: none;
+}
+navbar {
+	background-color: white;
+	z-index: 9999;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+}
+.fixed-navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: white;
+	z-index: 1000;
+	transition: transform 0.3s;
+}
+
+.navbar-brand img {
+	max-height: 40px;
+}
+
+.navbar-nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-link {
+    margin: 0 15px;
+    color: white;
+    margin-right: 105px;
+}
+
+body {
+	overflow-x: hidden;
+    padding-top: 80px;
+    height: 100%;
+    width: 100vw;
+    background: rgb(226, 210, 188);
+}
+
+
+.bodyContainer{
+    height: 80vh;
+}
+.checkoutContainer{
+    height: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.checkoutBox{
+    width: 70%;
+    height: 50%;
+    display: flex;
+    box-shadow: 0 5px 5px 2px;
+}
+.boxContainer{
+    flex-basis: 100%;
+}
+#leftside, #rightside{
+    padding: 10px;
+}
+
+.textInput{
+    width: 100%;
+}
+.textInputSmall{
+    width: 30%;
+}
+#submit{
+    width: 100%; 
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+#submit:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+/* Sticky Navbar */
+.navbar-sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	animation: slideDown 0.5s;
+}
+.navbar-fixed {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.navbar-hidden {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	animation: slideUp 0.5s forwards;
+}
+
+
+
+footer {
+	background-color: black;
+	padding: 10px;
+	color: #fff;
+	bottom: 0;
+	text-align: center;
+	overflow-x: hidden;
+
+}
