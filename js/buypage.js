@@ -1,69 +1,33 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var carousel = document.querySelector('.image-carousel');
-    var images = carousel.querySelectorAll('img');
-    var leftArrow = document.querySelector('.left-arrow');
-    var rightArrow = document.querySelector('.right-arrow');
-    var imageWidth = carousel.offsetWidth;
-    var currentIndex = 0; // Keep track of the current index
-    var totalImages = images.length;
+document.addEventListener("DOMContentLoaded", function() {
+  const shoeImages = {
+    'Shoe1': ['images/Shoe1.webp', 'images/Shoe1-secondary.webp'],
+    'Shoe2': ['images/Shoe2.webp', 'images/Shoe2-secondary.webp'],
+    'Shoe3': ['images/Shoe3.webp', 'images/Shoe3-secondary.webp'],
+    'Shoe4': ['images/Shoe4.webp', 'images/Shoe4-secondary.webp'],
+    'Shoe5': ['images/Shoe5.webp', 'images/Shoe5-secondary.webp'],
+    'Shoe6': ['images/Shoe6.webp', 'images/Shoe6-secondary.webp'],
+    'Shoe7': ['images/Shoe7.webp', 'images/Shoe7-secondary.webp'],
+    'Shoe8': ['images/Shoe8.webp', 'images/Shoe8.webp'],
+    'Shoe9': ['images/Shoe9.webp', 'images/Shoe9.webp'],
+  };
 
-    leftArrow.addEventListener('click', function() {
-        currentIndex = (currentIndex - 1 + totalImages) % totalImages;
-        carousel.scrollLeft = currentIndex * imageWidth;
-    });
+  function getQueryParam(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+  }
 
-    rightArrow.addEventListener('click', function() {
-        currentIndex = (currentIndex + 1) % totalImages;
-        carousel.scrollLeft = currentIndex * imageWidth;
-    });
+  const selectedShoe = getQueryParam('shoe');
 
-    function advanceCarousel() {
-        currentIndex = (currentIndex + 1) % totalImages;
+  if (selectedShoe && shoeImages[selectedShoe]) {
+    const primaryImageSrc = shoeImages[selectedShoe][0];
+    const secondaryImageSrc = shoeImages[selectedShoe][1];
 
-        if (currentIndex === 0) {
-            // Instantly reset to the start without animating the scroll
-            carousel.classList.add('no-transition');
-            carousel.scrollLeft = 0;
+    document.querySelector('.carousel-item.active img').src = primaryImageSrc;
 
-            // Force a reflow, then restart the transition
-            carousel.offsetHeight; // no-op read to trigger reflow
-            carousel.classList.remove('no-transition');
-        } else {
-            carousel.scrollLeft = currentIndex * imageWidth;
-        }
-    }
-
-    setInterval(advanceCarousel, 10000);
+    const carouselInner = document.querySelector('.carousel-inner');
+    const secondaryImageElement = document.createElement('div');
+    secondaryImageElement.className = 'carousel-item';
+    secondaryImageElement.innerHTML = `<img class="d-block w-100" src="${secondaryImageSrc}" alt="Secondary slide">`;
+    carouselInner.appendChild(secondaryImageElement);
+  }
 });
-  document.addEventListener("DOMContentLoaded", function() {
-    // Function to get URL parameters
-    function getParameterByName(name, url = window.location.href) {
-      name = name.replace(/[\[\]]/g, '\\$&');
-      const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-            results = regex.exec(url);
-      if (!results) return null;
-      if (!results[2]) return '';
-      return decodeURIComponent(results[2].replace(/\+/g, ' '));
-    }
-
-    // Get the parameters
-    const shoe = getParameterByName('shoe');
-    const name = getParameterByName('name');
-    const price = getParameterByName('price');
-
-    // Update the image and text
-    if (shoe) {
-      document.querySelector('.images-container img.placeholder').src = `images/${shoe}.webp`;
-      // Add more img tags or update existing ones based on your carousel implementation
-    }
-
-    if (name) {
-      // Update text elements
-      document.querySelector('.shoe-name').textContent = name;
-    }
-
-    if (price) {
-      document.querySelector('.shoe-price').textContent = `$${price}`;
-    }
-  });
-
