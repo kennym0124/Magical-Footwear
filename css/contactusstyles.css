@@ -1,7 +1,4 @@
 /* Custom styles for your site */
-*{
-    color: black;
-}
 
 .navbar {
 	background-color: white;
@@ -41,12 +38,13 @@ body {
 }
 
 footer {
-    background-color: #2C2D31;
-    padding: 20px 0;
+    background-color: black;
+    padding: 10px;
     color: #fff;
-    margin-top: 20px;
-    border: 2px solid #00FFFF;
-    border-radius: 10px;
+    bottom: 0;
+    text-align: center;
+    overflow-x: hidden;
+
 }
 
 .blog-image {

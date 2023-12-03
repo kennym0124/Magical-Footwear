@@ -2,7 +2,7 @@
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	background-color: beige;
+	background-color: #E2D2BC;
 	margin: 0;
 }
 
@@ -33,6 +33,10 @@ body {
 .content p {
 	max-width: 80%; /* Match the paragraph width to the image width */
 	margin: 0 auto 20px 0; /* Reduced bottom margin */
+	font-weight: normal; /* Could be bold, normal, etc. */
+	color: #000000; /* Change the color code to your preference */
+	line-height: 1.5; /* Adjust the line height for better readability */
+	font-size: 18px; /* Adjust the size as needed */
 }
 
 /* Make the first image smaller */
@@ -45,18 +49,12 @@ body {
 	text-decoration: none; /* Removes the underline from the link */
 }
 footer {
-	background-color: #000; /* Black background */
-	color: #fff; /* White text */
-	padding: 30px;
-	display: flex; /* Use flexbox for layout */
-	align-items: center; /* Align items vertically */
-	justify-content: flex-start; /* Start items from the left */
-}
-
-footer img {
-	height: 50px; /* Set the height of the images */
-	width: auto; /* Maintain the aspect ratio */
-	margin-right: 20px; /* Space between each icon */
+	background-color: black;
+	padding: 10px;
+	color: #fff;
+	bottom: 0;
+	text-align: center;
+	overflow-x: hidden;
 }
 .content h1 {
 	max-width: 85%;

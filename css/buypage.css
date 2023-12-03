@@ -193,4 +193,10 @@ body::after {
   .right-arrow {
 	right: 10px;
   }
-  
+footer {
+	background-color: black;
+	padding: 20px 0;
+	color: #fff;
+	bottom: 0;
+	width: 100%;
+}

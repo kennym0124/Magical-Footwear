@@ -96,12 +96,9 @@ body {
 	font-size: 20px;
 }
 footer {
-	background-color: #2C2D31;
+	background-color: black;
 	padding: 20px 0;
 	color: #fff;
-	border: 2px solid #00FFFF;
-	border-radius: 10px;
-	box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
 	position: absolute;
 	bottom: 0;
 	width: 100%;
