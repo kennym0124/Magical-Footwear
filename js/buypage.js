@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
     'Shoe5': ['images/Shoe5.webp', 'images/Shoe5-secondary.webp'],
     'Shoe6': ['images/Shoe6.webp', 'images/Shoe6-secondary.webp'],
     'Shoe7': ['images/Shoe7.webp', 'images/Shoe7-secondary.webp'],
-    'Shoe8': ['images/Shoe8.webp', 'images/Shoe8.webp'],
-    'Shoe9': ['images/Shoe9.webp', 'images/Shoe9.webp'],
+    'Shoe8': ['images/Shoe8.webp', 'images/Shoe8-secondary.webp'],
+    'Shoe9': ['images/Shoe9.webp', 'images/Shoe9-secondary.webp'],
   };
 
   function getQueryParam(param) {
