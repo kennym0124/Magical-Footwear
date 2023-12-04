@@ -66,6 +66,12 @@ footer {
     width: 57%;
     padding: 20px
 }
+#introBoxImg{
+    width: 200px; 
+    min-width: 200px; 
+    height: 200px; 
+    min-height: 200px;
+}
 .introBoxContent{
     text-align: center;
     width: 40%;
@@ -245,3 +251,116 @@ footer {
         transform: translateY(-100%);
     }
 }
+
+/* Default styles */
+
+/* Add your default styles here */
+
+/* Responsive styles */
+
+@media screen and (max-width: 1024px) {
+    /* Adjust styles for medium-sized screens (e.g., tablets) */
+  
+    body {
+      font-size: 14px; /* Adjust font size for better readability on medium-sized screens */
+    }
+  
+    .logo {
+      font-size: 1.5em; /* Adjust the size of the logo for medium-sized screens */
+    }
+  
+    #main-body {
+      padding: 20px; /* Add some padding to the main content for better spacing on medium-sized screens */
+    }
+    #card{
+        width: 200px;
+    }
+    .backCard4 .cardtext{
+        width: fit-content;
+        font-size: 18px;
+    }
+    .whoWeAreContent {
+      flex-direction: column; /* Stack image on top of the text for medium-sized screens */
+    }
+  
+    .whoWeAreImage {
+      margin-top: 20px; /* Add some margin between image and text on medium-sized screens */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    /* Adjust styles for smaller screens (e.g., smartphones) */
+  
+    body {
+      font-size: 12px; /* Adjust font size for better readability on smaller screens */
+    }
+  
+    .logo {
+      font-size: 1.2em; /* Adjust the size of the logo for smaller screens */
+    }
+  
+    /* Hide the menu by default and display it when the burger menu is clicked */
+    #menu {
+      display: none;
+    }
+  
+    #burger-menu {
+      display: block;
+    }
+  
+    #burger-menu span {
+      display: block;
+      width: 30px;
+      height: 3px;
+      background-color: #333;
+      margin: 6px 0;
+    }
+  
+    #main-body {
+      padding: 15px; /* Adjust padding for better spacing on smaller screens */
+    }
+    .introBox{
+        width: fit-content;
+    }
+    .introBox img{
+        display: none;
+    }
+    .introBoxContent{
+        width: 100%;
+    }
+    .freqHeader{
+        flex-direction: column;
+        align-items: center;
+    }
+    .freqHeaderText h1{
+        font-size: 2px;
+    }
+    .freqQuestions{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .contactContainer{
+        width: fit-content;
+    }
+    .contactContainer h1{
+        font-size: 20px;
+    }
+    #leftSide, #rightSide{
+        padding: 20px;
+    }
+    .whoWeAreContent {
+      flex-direction: column; /* Stack image on top of the text for smaller screens */
+    }
+  
+    .whoWeAreImage {
+      margin-top: 15px; /* Add some margin between image and text on smaller screens */
+    }
+  
+    .social-media-buttons {
+      display: flex;
+      flex-direction: column; /* Stack social media buttons for better layout on smaller screens */
+      align-items: center;
+    }
+  }
+  
