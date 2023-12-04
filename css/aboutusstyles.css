@@ -254,6 +254,62 @@ footer {
 	max-width: 100%;
 	height: auto;
   }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    /* Styles for navigation, layout, font size adjustments */
+    .navbar-nav {
+        flex-direction: row;
+    }
 
-  
-  
+    .Team-work img {
+        width: 100%; /* Adjust for better fit */
+    }
+	.subInfoBox {
+		margin-left: 4%;
+	}
+    .subInfoBox, .whoWeAreSection {
+		width: 93%;
+		height: 10%;
+		margin-top: 9%;
+    }
+    .contentContainer, .whoWeAreContent {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .whoWeAreText, .whoWeAreImage, .imageContainer, #subInfo {
+        flex-basis: 100%; /* Take full width */
+        margin: 0 auto; /* Centering */
+    }
+}
+
+/* Responsive design for mobile phones */
+@media (max-width: 767px) {
+    /* Styles for smaller screens like phones */
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .Team-work img {
+        width: 100%; /* Adjust for better fit */
+    }
+	.subInfoBox {
+		margin-left: 4%;
+	}
+    .subInfoBox, .whoWeAreSection {
+		width: 93%;
+		height: 10%;
+		margin-top: 9%;
+    }
+
+    .contentContainer, .whoWeAreContent {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .whoWeAreText, .whoWeAreImage, .imageContainer, #subInfo {
+        flex-basis: 100%; /* Take full width */
+        margin: 0 auto; /* Centering */
+    }
+
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.8); /* Optional: Change for mobile */
+    }
+}
