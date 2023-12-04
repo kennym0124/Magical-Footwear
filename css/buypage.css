@@ -23,9 +23,9 @@
 }
 
 .nav-link {
-    margin: 0 15px;
-    color: white;
-    margin-right: 105px;
+	margin: 0 15px;
+	color: white;
+	margin-right: 105px;
 }
 body {
 	background-size: 300%;
@@ -37,11 +37,11 @@ body {
 	overflow-x: hidden;
 }
 .container {
-    width: 100%;
-    padding-right: 0px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+	width: 100%;
+	padding-right: 0px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
 }
 .btn-block {
 	width: 100%;
@@ -58,17 +58,17 @@ body {
 	text-align: center;
 }
 picture {
-    margin-left: 0;
+	margin-left: 0;
 }
 .button-container {
 	padding-top: 10px;
 	max-width: 650px;
 }
 .content-container {
-  display: flex;
-  align-items: center; 
-  margin-top: 100px;
-  position: relative;
+	display: flex;
+	align-items: center;
+	margin-top: 100px;
+	position: relative;
 }
 body::after {
 	content: '';
@@ -81,12 +81,12 @@ body::after {
 	z-index: 10;
 }
 .col-2 {
-    padding-right: 1px;
+	padding-right: 1px;
 }
 .Textforshoe {
 	width: 25%;
 	margin-left: auto;
-    margin-right: 450px;
+	margin-right: 450px;
 	margin-top: -11%;
 }
 /* Sticky Navbar */
@@ -127,7 +127,7 @@ body::after {
 }
 .Cart-buttons {
 	padding-left: 17px;
-    max-width: 71.5%;
+	max-width: 71.5%;
 }
 
 footer {
@@ -138,45 +138,43 @@ footer {
 	text-align: center;
 	overflow-x: hidden;
 }
-
-
 .custom-carousel .carousel-inner {
-    background-color: white;
-    border-radius: 10px;
-    width: 90%;
-    height: 90%;
-    margin-left: 38px;
-    margin-top: 30px;
+	background-color: white;
+	border-radius: 10px;
+	width: 90%;
+	height: 90%;
+	margin-left: 38px;
+	margin-top: 30px;
 }
 .carousel-inner {
 	width: 100%;
 }
 .carousel-item {
 	transition: transform 0.6s ease-in-out;
-  }
+}
 .custom-carousel {
-    margin-left: 74px;
-    width: 85%;
-    height: 94%;
-    border: 2px solid #000;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    overflow: hidden;
-    margin-top: 92px;
-  }
+	margin-left: 74px;
+	width: 85%;
+	height: 94%;
+	border: 2px solid #000;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	overflow: hidden;
+	margin-top: 92px;
+}
 .carousel-control-prev {
-    left: -30px;
+	left: -30px;
 }
 .carousel-control-next {
-    right: -30px;
+	right: -30px;
 }
 .button-grid-column {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 	max-height: 500px;
-    margin-top: 6%;
+	margin-top: 6%;
 }
 
 .button-container {
-    max-height: 500px;
+	max-height: 500px;
 }

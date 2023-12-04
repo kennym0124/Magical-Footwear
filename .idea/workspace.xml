@@ -5,21 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e09b8d6-526a-440d-8c8c-60aa7daffc15" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Magical-Footwear-main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Blog.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Buypage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Buypage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Buypage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/aboutus.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/blog2.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/blog3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/contactus.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/aboutusstyles.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/blogstyles.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/bootstrap-4.4.1.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/buypage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/buypage.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/buypage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/checkout.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/contactusstyles.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/hamburger.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/shoeselect.css" beforeDir="false" />
@@ -27,11 +25,18 @@
       <change beforePath="$PROJECT_DIR$/images/Dressshoes.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/images/Logo.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/images/Placeholdershoe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Shoe1-secondary.webp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/images/Shoe1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Shoe2-secondary.webp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/images/Shoe2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Shoe3-secondary.webp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/images/Shoe3.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Shoe4-secondary.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Shoe5-secondary.webp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/images/Shoe5.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Shoe6-secondary.webp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/images/Shoe6.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Shoe7-secondary.webp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/images/Shoe7.webp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/images/Shoe8.webp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/images/Shoe9.webp" beforeDir="false" />
@@ -63,6 +68,7 @@
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/js/bootstrap-4.4.1.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/js/buypage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/checkout.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/js/contactus.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/js/indexJS.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/js/jquery-3.4.1.min.js" beforeDir="false" />
@@ -97,7 +103,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Merging main",
     "last_opened_file_path": "C:/Users/Demen/Downloads/Magical-Footwear-main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -115,7 +121,7 @@
       <option name="presentableId" value="Default" />
       <updated>1701542152406</updated>
       <workItem from="1701542155096" duration="3062000" />
-      <workItem from="1701646667228" duration="3854000" />
+      <workItem from="1701646667228" duration="3935000" />
     </task>
     <servers />
   </component>
