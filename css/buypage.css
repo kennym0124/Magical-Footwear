@@ -53,9 +53,7 @@ body {
 	color: white;
 }
 
-footer {
 
-  }
 .social-media-buttons {
 	text-align: center;
 }
@@ -82,19 +80,14 @@ body::after {
 	background-color: black;
 	z-index: 10;
 }
-.placeholder {
-  max-width: 610px;
-  padding-top: 70px;
-  padding-right: 50px;
-}
 .col-2 {
     padding-right: 1px;
 }
 .Textforshoe {
-	padding-left: 31px;
 	width: 25%;
 	margin-left: auto;
     margin-right: 450px;
+	margin-top: -11%;
 }
 /* Sticky Navbar */
 .navbar-sticky {
@@ -133,59 +126,57 @@ body::after {
 	}
 }
 .Cart-buttons {
-	padding-left: 29px;
+	padding-left: 17px;
+    max-width: 71.5%;
 }
-.image-carousel-container {
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-    margin-top: 149px;
-    margin-right: 130px;
-	background-color: white;
-	border-radius: 15px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	transform: scale(1.5);
-  }
-  
-  .image-carousel {
-	overflow: hidden;
-	display: flex;
-	scroll-behavior: smooth;
-  }
-  
-  .placeholder {
-	flex: 0 0 auto;
-	width: 100%;
-	margin-right: 10px;
-  }
-  
-  .carousel-nav {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	background-color: #fff;
-	border: none;
-	cursor: pointer;
-	padding: 10px;
-	border-radius: 50%;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  .images-container {
-	display: flex;
-	transition: transform 0.3s ease-in-out;
-  }
-  .left-arrow {
-	left: 10px;
-  }
-  
-  .right-arrow {
-	right: 10px;
-  }
+
 footer {
 	background-color: black;
-	padding: 20px 0;
+	padding: 10px;
 	color: #fff;
 	bottom: 0;
+	text-align: center;
+	overflow-x: hidden;
+}
+
+
+.custom-carousel .carousel-inner {
+    background-color: white;
+    border-radius: 10px;
+    width: 90%;
+    height: 90%;
+    margin-left: 38px;
+    margin-top: 30px;
+}
+.carousel-inner {
 	width: 100%;
+}
+.carousel-item {
+	transition: transform 0.6s ease-in-out;
+  }
+.custom-carousel {
+    margin-left: 74px;
+    width: 85%;
+    height: 94%;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin-top: 92px;
+  }
+.carousel-control-prev {
+    left: -30px;
+}
+.carousel-control-next {
+    right: -30px;
+}
+.button-grid-column {
+    display: flex;
+    flex-direction: column;
+	max-height: 500px;
+    margin-top: 6%;
+}
+
+.button-container {
+    max-height: 500px;
 }

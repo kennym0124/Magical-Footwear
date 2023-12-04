@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3e09b8d6-526a-440d-8c8c-60aa7daffc15" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Magical-Footwear-main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Buypage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aboutus.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contactus.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/aboutusstyles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/blogstyles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-4.4.1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/buypage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/contactusstyles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/hamburger.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/shoeselect.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Dressshoes.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Placeholdershoe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Shoe1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Shoe2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Shoe3.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Shoe5.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Shoe6.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Shoe7.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Shoe8.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Shoe9.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/SprayShoes3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Spraycan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/addressPin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/background.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/blog1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/blog2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/blog3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/cart64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/customerSatisfaction.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/customerService.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/discount.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/emailLogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/facebook.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/faq.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/homePageShoe.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/innovation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/instagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/phoneLogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/placeholdershoe2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/runningShoes.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/shoe4.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/shoemaker.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/sprayshoes1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/twitter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/youtube.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap-4.4.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/buypage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/contactus.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/indexJS.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery-3.4.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/navbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/saved for later.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/shoeselect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoeselect.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2YzxLPCEKFhkS5whpK6alwbDDr6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Demen/Downloads/Magical-Footwear-main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3e09b8d6-526a-440d-8c8c-60aa7daffc15" name="Changes" comment="" />
+      <created>1701542152406</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701542152406</updated>
+      <workItem from="1701542155096" duration="3062000" />
+      <workItem from="1701646667228" duration="3854000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

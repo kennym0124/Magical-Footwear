@@ -49,4 +49,29 @@ document.addEventListener('DOMContentLoaded', function() {
       sortedCards.forEach(card => container.appendChild(card));
     });
   });
-  
+  document.addEventListener("DOMContentLoaded", function() {
+    function getParameterByName(name, url = window.location.href) {
+      name = name.replace(/[\[\]]/g, '\\$&');
+      const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+
+    const shoe = getParameterByName('shoe');
+    const name = getParameterByName('name');
+    const price = getParameterByName('price');
+
+    if (shoe) {
+      document.querySelector('.images-container img.placeholder').src = `images/${shoe}.webp`;
+    }
+
+    if (name) {
+      document.querySelector('.shoe-name').textContent = name;
+    }
+
+    if (price) {
+      document.querySelector('.shoe-price').textContent = `$${price}`;
+    }
+  });

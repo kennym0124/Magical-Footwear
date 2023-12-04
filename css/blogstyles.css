@@ -10,6 +10,7 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 400px; /* Increased sidebar width */
 	margin: 10px;
+
 }
 
 .content, .sidebar {
@@ -19,6 +20,8 @@ body {
 .image-container {
 	margin-bottom: 30px;
 }
+
+/* Since we added a border, you might need to adjust the width of the content to fit your layout properly */
 
 /* Styles for images */
 .sidebar img {
@@ -58,13 +61,27 @@ footer {
 }
 .content h1 {
 	max-width: 85%;
+	text-align: center;
+	margin-left: 60px;
 }
-
-
+.content p {
+	margin-left: 110px;
+}
+.subInfoBox {
+	width: 80%;
+	box-shadow: 0 5px 5px 2px;
+}
 /* Media query for smaller screens */
 @media (max-width: 1500px) {
+	.subInfoBox {
+		width: 100%;
+	}
 	.content p {
+		margin: 0;
 		max-width: 100%; /* Match the paragraph width to the image width */
+	}
+	.content h1 {
+		margin-left: 0;
 	}
 	.container {
 		grid-template-columns: 1fr;
@@ -80,4 +97,23 @@ footer {
 		max-width: 100%; /* Image takes full width of the container */
 		width: auto; /* Image width adjusts automatically */
 	}
+	.content::after {
+		display: none; /* This hides the pseudo-element */
+	}
+}
+
+.content::after {
+	content: ""; /* Necessary to generate a pseudo-element */
+	position: absolute; /* Position the pseudo-element absolutely relative to its parent */
+	top: 0; /* Align the top of the pseudo-element with the top of the parent */
+	right: 190px; /* Adjust this value to move the line to the left */
+	bottom: 0; /* Align the bottom of the pseudo-element with the bottom of the parent */
+	width: 3px; /* Width of the vertical line */
+	background-color: black; /* Color of the vertical line */
+}
+
+/* Ensure .content has position: relative; so that the ::after pseudo-element is positioned in relation to it */
+.content {
+	position: relative;
+	/* Other styles */
 }
